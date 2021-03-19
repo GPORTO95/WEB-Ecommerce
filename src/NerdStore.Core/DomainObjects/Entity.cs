@@ -41,7 +41,7 @@ namespace NerdStore.Core.DomainObjects
 
         public override int GetHashCode()
         {
-            return (GetType().GetHashCode() * 970) + Id.GetHashCode());
+            return (GetType().GetHashCode() * 970) + Id.GetHashCode();
         }
 
         public override string ToString()

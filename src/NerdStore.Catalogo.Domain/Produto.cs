@@ -17,7 +17,7 @@ namespace NerdStore.Catalogo.Domain
         /// <param name="categoriaId"></param>
         /// <param name="dataCadastro"></param>
         /// <param name="imagem"></param>
-        public Produto(string nome, string descricao, bool ativo, decimal valor, Guid categoriaId, DateTime dataCadastro, string imagem)
+        public Produto(string nome, string descricao, bool ativo, decimal valor, Guid categoriaId, DateTime dataCadastro, string imagem, Dimensoes dimensoes)
         {
             CategoriaId = categoriaId;
             Nome = nome;
@@ -26,12 +26,14 @@ namespace NerdStore.Catalogo.Domain
             Valor = valor;
             DataCadastro = dataCadastro;
             Imagem = imagem;
+            Dimensoes = dimensoes;
 
             Validar();
         }
         /// <summary>
         /// Propriedades
         /// </summary>
+        public Guid CategoriaId { get; private set; }
         public string Nome { get; private set; }
         public string Descricao { get; private set; }
         public bool Ativo { get; private set; }
@@ -39,8 +41,7 @@ namespace NerdStore.Catalogo.Domain
         public DateTime DataCadastro { get; private set; }
         public string Imagem { get; private set; }
         public int QuantidadeEstoque { get; private set; }
-
-        public Guid CategoriaId { get; private set; }
+        public Dimensoes Dimensoes { get; private set; }
         public Categoria Categoria { get; private set; }
         /// <summary>
         /// Add hook setters
@@ -77,11 +78,11 @@ namespace NerdStore.Catalogo.Domain
         }
         public void Validar()
         {
-            Validacoes.ValidarSeVazio(Nome, "O campo Nome do produto não pode estar vazio!");
-            Validacoes.ValidarSeVazio(Descricao, "O campo Descricao do produto não pode estar vazio!");
-            Validacoes.ValidarSeDiferente(CategoriaId, Guid.Empty, "O campo CategoriaId não pode estar vazio");
-            Validacoes.ValidarSeMenorIgualMinimo(Valor, 0, "O campo Valor do produto não pode ser menor ou igual a zero");
-            Validacoes.ValidarSeVazio(Imagem, "O campo Imagem do produto não pode estar vazio!");
+            Validacoes.ValidarSeVazio(Nome, "O campo Nome do produto não pode estar vazio");
+            Validacoes.ValidarSeVazio(Descricao, "O campo Descricao do produto não pode estar vazio");
+            Validacoes.ValidarSeIgual(CategoriaId, Guid.Empty, "O campo CategoriaId do produto não pode estar vazio");
+            Validacoes.ValidarSeMenorQue(Valor, 1, "O campo Valor do produto não pode se menor igual a 0");
+            Validacoes.ValidarSeVazio(Imagem, "O campo Imagem do produto não pode estar vazio");
         }
     }
 }
