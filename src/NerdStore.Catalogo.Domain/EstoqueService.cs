@@ -39,7 +39,7 @@ namespace NerdStore.Catalogo.Domain
 
         }
 
-        public async Task<bool> ReportEstoque(Guid produtoId, int quantidade)
+        public async Task<bool> ReporEstoque(Guid produtoId, int quantidade)
         {
             var produto = await _produtoRepository.ObterPorId(produtoId);
 
