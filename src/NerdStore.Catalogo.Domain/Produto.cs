@@ -7,6 +7,7 @@ namespace NerdStore.Catalogo.Domain
 {
     public class Produto : Entity, IAggregateRoot
     {
+        protected Produto() {}
         /// <summary>
         /// Construtores
         /// </summary>
