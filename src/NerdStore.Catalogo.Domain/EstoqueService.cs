@@ -43,9 +43,8 @@ namespace NerdStore.Catalogo.Domain
         {
             var produto = await _produtoRepository.ObterPorId(produtoId);
 
-            if (produto == null) return false;
-
-            if (!produto.PossuiEstoque(quantidade)) return false;
+            if (produto == null) 
+                return false;
 
             produto.ReporEstoque(quantidade);
 
