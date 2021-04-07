@@ -24,3 +24,4 @@ Foi baseado em um e-commerce de vendas, inicialmente feito apenas para camisetas
 - Event Sourcing
 - Unit of Work
 - Repository
+- XUnit para cobertura de testes
