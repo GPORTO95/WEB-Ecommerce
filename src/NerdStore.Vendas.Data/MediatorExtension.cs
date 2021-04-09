@@ -25,7 +25,7 @@ namespace NerdStore.Vendas.Data
 
             var tasks = domainEvents
                 .Select(async (domainEvent) => {
-                    await mediator.PublicarEvent(domainEvent);
+                    await mediator.PublicarEvento(domainEvent);
                 });
 
             await Task.WhenAll(tasks);
