@@ -1,5 +1,5 @@
 ﻿using EventStore.ClientAPI;
-using NerdStore.Core.Data.EvetnSourcing;
+using NerdStore.Core.Data.EventSourcing;
 using NerdStore.Core.Messages;
 using Newtonsoft.Json;
 using System;

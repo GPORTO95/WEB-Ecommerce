@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using NerdStore.Core.Communication.Mediator;
 using NerdStore.Core.DomainObjects.DTO;
 using NerdStore.Core.Messages.ComunMessages.IntegrationEvents;
@@ -31,6 +32,7 @@ namespace NerdStore.Pagamentos.Business
 
             var pagamento = new Pagamento
             {
+                Id = Guid.NewGuid(),
                 Valor = pagamentoPedido.Total,
                 NomeCartao = pagamentoPedido.NomeCartao,
                 NumeroCartao = pagamentoPedido.NumeroCartao,

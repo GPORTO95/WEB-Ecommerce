@@ -25,3 +25,9 @@ Foi baseado em um e-commerce de vendas, inicialmente feito apenas para camisetas
 - Unit of Work
 - Repository
 - XUnit para cobertura de testes
+
+## Start
+- Ter instalado o .net core 3.1 ou superior
+- SQL Server - Rodar as migrations
+- Instalar Envent Store
+- Comando para executar o event store: Posicionar o cmd na pasta instalada e rodar o comando EventStore.ClusterNode.exe --config D:\ESDB\eventstore.conf

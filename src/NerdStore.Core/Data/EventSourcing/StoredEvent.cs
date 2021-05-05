@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NerdStore.Core.Data.EvetnSourcing
+namespace NerdStore.Core.Data.EventSourcing
 {
     public class StoredEvent
     {

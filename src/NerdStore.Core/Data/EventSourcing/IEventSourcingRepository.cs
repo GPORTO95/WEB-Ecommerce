@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace NerdStore.Core.Data.EvetnSourcing
+namespace NerdStore.Core.Data.EventSourcing
 {
     public interface IEventSourcingRepository
     {
