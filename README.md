@@ -31,6 +31,9 @@ Foi baseado em um e-commerce de vendas, inicialmente feito apenas para camisetas
 - SSMS (SQL SERVER) - Rodar as migrations para cada contexto
 - Instalar [Envent Store](https://developers.eventstore.com/)
 - Habilitar o Event Store (Após executar o passo a passo de instalação conforme a documentação)
+
   1 - Após executar o passo a passo de instalação conforme a documentação
+  
   2 - Posicionar o cmd na pasta instalada, provavelmente no seu C:\ESDB ou D:\ESDB(meu caso)
+  
   3 - Executar comando EventStore.ClusterNode.exe --config D:\ESDB\eventstore.conf
