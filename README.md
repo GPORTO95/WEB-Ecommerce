@@ -27,7 +27,10 @@ Foi baseado em um e-commerce de vendas, inicialmente feito apenas para camisetas
 - XUnit para cobertura de testes
 
 ## Start
-- Ter instalado o .net core 3.1 ou superior
-- SQL Server - Rodar as migrations
-- Instalar Envent Store
-- Comando para executar o event store: Posicionar o cmd na pasta instalada e rodar o comando EventStore.ClusterNode.exe --config D:\ESDB\eventstore.conf
+- Ter instalado o [SDK .Net Core 3.1](https://dotnet.microsoft.com/download/dotnet/3.1)
+- SSMS (SQL SERVER) - Rodar as migrations para cada contexto
+- Instalar [Envent Store](https://developers.eventstore.com/)
+- Habilitar o Event Store (Após executar o passo a passo de instalação conforme a documentação)
+  1 - Após executar o passo a passo de instalação conforme a documentação
+  2 - Posicionar o cmd na pasta instalada, provavelmente no seu C:\ESDB ou D:\ESDB(meu caso)
+  3 - Executar comando EventStore.ClusterNode.exe --config D:\ESDB\eventstore.conf
