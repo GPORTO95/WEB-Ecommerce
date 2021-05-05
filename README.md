@@ -26,7 +26,7 @@ Foi baseado em um e-commerce de vendas, inicialmente feito apenas para camisetas
 - Repository
 - XUnit para cobertura de testes
 
-## :zap: Start
+## :zap: Running
 - Ter instalado o [SDK .Net Core 3.1](https://dotnet.microsoft.com/download/dotnet/3.1)
 - SSMS (SQL SERVER) - Rodar as migrations para cada contexto
 - Instalar [Envent Store](https://developers.eventstore.com/)
