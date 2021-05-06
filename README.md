@@ -1,4 +1,4 @@
-## Projeto E-Commerce - Nerd Store
+## :computer: Projeto E-Commerce - Nerd Store
 
 Projeto Open-Source feito em .NET Core
 
