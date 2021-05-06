@@ -13,6 +13,7 @@ Foi baseado em um e-commerce de vendas, inicialmente feito apenas para camisetas
 - FluentValidator
 - AutoMapper
 - MediatR
+- Teste de unidade
 
 ## :building_construction: Arquitetura
 - Arquitetura completa com questões de separação de responsabilidades, SOLID e Clean Code
