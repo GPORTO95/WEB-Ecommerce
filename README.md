@@ -4,7 +4,7 @@ Projeto Open-Source feito em .NET Core
 
 Foi baseado em um e-commerce de vendas, inicialmente feito apenas para camisetas e canecas.
 
-## :woman_technologist: Tecnologias implementadas
+## :woman_technologist: Tecnologias
 - ASP.NET 3.1
 - ASP.NET MVC Core
 - ASP.NET Identity Core
